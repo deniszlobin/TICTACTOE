@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      div {
+        display: block;
+      }
+      #playingField {
+        margin: 0 auto;
+        border: 1px solid #000;
+        width: 156px;
+        font-size: 0;
+      }
+      .cell {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-family: arial;
+        display: inline-block;
+        font-size: 26px;
+        border: 1px solid #000;
+        cursor: pointer;
+        vertical-align: middle;
+      }
+      #queue {
+        text-align: center;
+      }
+      #startBegin {
+        margin: 0 auto;
+        display: block;
+      }
+      #statistics {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border: 1px solid;
+        padding: 0 20px;
+        display: inline-block;
+      }
+      p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="playingField">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    <p id="queue">Ходит: x</p>
+    <p><button id="startBegin">Начать сначала</button></p>
+    <div id="statistics">
+      <p>Выиграл <b>x</b>: <span id="winX">0</span></p>
+      <p>Выиграл <b>0</b>: <span id="win0">0</span></p>
+      <p>Ничья:<span id="draw">0</span></p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
